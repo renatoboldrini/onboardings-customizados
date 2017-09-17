@@ -19,8 +19,7 @@
 var calcular = function(){
 	var checkboxes = document.querySelectorAll('[type=checkbox]');
 	var sectionResultado = document.querySelector('#resultado');
-	var resultado = 0;
-
+	var resultado = 0;	
 
 	for(var i in checkboxes){
 		var checkbox = checkboxes[i];

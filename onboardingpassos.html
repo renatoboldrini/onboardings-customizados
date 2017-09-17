@@ -76,10 +76,10 @@
         <div class="card">
     <div class="card-header" role="tab" id="headingOne">
       <p class="mb-0">
-        <input type="checkbox" name="configBasicas" value="0.25" id="configBasicas">
+        <input type="checkbox" name="configBasicas" value="0.25" id="configBasicas" checked>
         <in
         <a class="collapsed" data-toggle="collapse" href="#descricaoConfigBasicas" aria-expanded="false" aria-controls="descricaoConfigBasicas">
-          Configurações iniciais e importação de listas de e-mails 
+          Configurações iniciais e importação de listas de e-mails <span class="badge badge-pill badge-secondary">Incluso</span>
         </a>
       </p>
     </div>
@@ -92,10 +92,10 @@
   <div class="card">
     <div class="card-header" role="tab" id="headingTwo">
       <p class="mb-0">
-        <input type="checkbox" name="integracoesNativas" value="0.25" id="integracoesNativas">
+        <input type="checkbox" name="integracoesNativas" value="0.25" id="integracoesNativas" checked>
         <in
         <a class="collapsed" data-toggle="collapse" href="#descricaoIntegracoesNativas" aria-expanded="false" aria-controls="descricaoIntegracoesNativas">
-          Integrações nativas com outras ferramentas
+          Integrações nativas com outras ferramentas <span class="badge badge-pill badge-secondary">Incluso</span>
         </a>
       </p>
     </div>
@@ -331,14 +331,14 @@
       </div>
     </div>
   </div><br><br>
-<a class="btn btn-primary btn-xl js-scroll-trigger" href="#passo3">Próximo Passo</a>
+<a class="btn btn-primary btn-xl js-scroll-trigger" href="#passo4">Próximo Passo</a>
      </section>   
 
                 </div>
             </div>
         </div>
 
-<section class="bg-primary" id="passo1">
+<section class="bg-primary" id="passo4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
@@ -410,13 +410,22 @@
       </div>
     </div>
   </div><br><br>
+
 <a class="btn btn-primary btn-xl js-scroll-trigger" onclick="calcular()">Ver Resultado</a>
      </section>
 
-    <section id="resultado">
-        
 
-    </section>
+     <section class="bg-primary"> 
+        <span class="badge badge-pill badge-secondary" id=resultado> </span>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+     </div>
+     </div>
+     </div>
+     </section>               
+
+
               
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
