@@ -502,9 +502,19 @@ fieldset[disabled] .btn-primary:hover {
 }
 
 
-.no-link {
-    text-decoration: none; 
+.alinharCheck { 
+    text-align: left;
+}
+
+
+.linkPreto {
     color: black;
+}
+
+
+.tabela {
+    width: 80%; 
+    margin: auto;
 }
 /* Inicio do meu CSS */
 
