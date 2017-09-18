@@ -411,20 +411,32 @@
     </div>
   </div><br><br>
 
-<a class="btn btn-primary btn-xl js-scroll-trigger" onclick="calcular()">Ver Resultado</a>
+<a class="btn btn-primary btn-xl js-scroll-trigger" href="#verResultado" onclick="calcular()"''>Ver Resultado</a>
      </section>
 
 
-     <section class="bg-primary"> 
-        <span class="badge badge-pill badge-secondary" id=resultado> </span>
+    <section class="bg-primary" id="verResultado">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-     </div>
-     </div>
-     </div>
-     </section>               
-
+                    <h2 class="section-heading text-white">Onboarding Ideal</h2><br>
+                    <hr class="light"><br>
+            <div id="accordion" role="tablist">
+        <div class="card">
+    <div class="card-header" role="tab">
+        <table class="table table-sm table-bordered" style="text-align: left;">
+            <tr>
+                <th>Descrição dos serviços</th>
+                <th>Horas</th>
+                <th>Preço</th>
+            </tr>
+            <tbody id="resultado" >
+                
+            </tbody>
+        </table>
+      </p>
+    </div>
+  </div><br><br>
 
               
     <!-- Bootstrap core JavaScript -->

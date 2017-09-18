@@ -17,17 +17,23 @@
 // var abordagemLeads= document.querySelector("#abordagemLeads");
 
 var calcular = function(){
-	var checkboxes = document.querySelectorAll('[type=checkbox]');
-	var sectionResultado = document.querySelector('#resultado');
-	var resultado = 0;	
+	var totalHoras = 0;
+	var totalPreco = 0;
+	var days = 'Total de 90 dias para o Onboarding';
 
-	for(var i in checkboxes){
-		var checkbox = checkboxes[i];
+	$("#resultado").html('');
 
-		if(checkbox.checked){
-			resultado += Number(checkbox.value);
+	$('input[type=checkbox]').each(function () { 
+		var sThisVal = (this.checked ? $(this).val() : ""); 
+		if(sThisVal != ""){
+			var name = $(this).next().text();
+            var preco = 450;
+			totalHoras += Number(sThisVal);
+			totalPreco +=  Number(sThisVal) * preco;
+            var line = "<tr scope=\"row\"><td>"+ name +"</td><td>" + Number(sThisVal) + "</td><td>R$" + Number(sThisVal) * preco + "</td></tr>";
+            $("#resultado").append(line);
 		}
-	}
-
-	sectionResultado.innerHTML = resultado;
+	});
+	var line = "<tr style=\"font-weight: bold;\"><td>"+ days +"</td><td>" + Number(totalHoras) + "</td><td>R$" + Number(totalPreco) + "</td></tr>";
+    $("#resultado").append(line);
 }
